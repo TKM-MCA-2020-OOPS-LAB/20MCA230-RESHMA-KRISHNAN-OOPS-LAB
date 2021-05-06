@@ -34,6 +34,7 @@ public class Employee{
 	    }
 	    
 	    void displayinfo(int emp_no, int c) {
+	    	int flag=0;
 	    	e = emp_no;
 	    	count = c;
 	    	for(i=0;i<count;i++)
@@ -44,7 +45,11 @@ public class Employee{
 	    	        System.out.println("Name:"+eName[i]);
 	    	        System.out.println("Salary:"+eSalary[i]);
 	    		}
-	    	}    		   
+	    		else
+	    			 flag=1;		
+	    	} 
+	    	if(flag==1)
+	    		System.out.println("Record Not Found!");
 	   }
 	               
 	    public static void main(String[] args){
@@ -61,4 +66,3 @@ public class Employee{
 	        sc.close();     
 	    }   
 	}
-
