@@ -40,15 +40,15 @@ public class Employee{
 	    	for(i=0;i<count;i++)
 	    	{
 	    		if(eNo[i]==e)
-	    		{
+	    		{   
 	    	    	System.out.println("No:"+eNo[i]);
 	    	        System.out.println("Name:"+eName[i]);
 	    	        System.out.println("Salary:"+eSalary[i]);
+	    	        flag++;
 	    		}
-	    		else
-	    			 flag=1;		
+	    				
 	    	} 
-	    	if(flag==1)
+	    	if(flag==0)
 	    		System.out.println("Record Not Found!");
 	   }
 	               
