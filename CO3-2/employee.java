@@ -20,8 +20,8 @@ static class Teacher extends Employee{
         String Subject;
        
         
-                  public Teacher(int id, String name, float salary, String address, String dept, String subj) {
-			 super(id, name, salary, address);
+        public Teacher(int id, String name, float salary, String address, String dept, String subj) {
+        super(id, name, salary, address);
 			
 			
 		this.Department = dept;
@@ -49,40 +49,40 @@ static class Teacher extends Employee{
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int i,count, ID;
+		int i,count, id_;
 		float sal;
 		String nam,adr,dep,sub;
 		
 
 		System.out.println("Enter the number of records to be stored:");
-                                      count = sc.nextInt();
+		count = sc.nextInt();
         
-                                     Teacher[] e = new Teacher[count];
+		Teacher[] e = new Teacher[count];
       
 		
 		for( i=0; i<count; i++)
 			{
 			
 			   System.out.println("Enter the ID:");
-	                                        ID= sc.nextInt();
+			    id_= sc.nextInt();
 			   System.out.println("Enter the name:");
-			   nam= sc.next();
+			    nam= sc.next();
 			   System.out.println("Enter the salary:");
 			    sal= sc.nextFloat();
 			   System.out.println("Enter the address:");
-			   adr= sc.next();
+			    adr= sc.next();
 			   System.out.println("Enter the department:");
-			   dep= sc.next();
+			    dep= sc.next();
 			   System.out.println("Enter the subject:");
-			   sub= sc.next();
+			    sub= sc.next();
 	        
-			   e[i] = new Teacher(ID,nam,sal,adr,dep,sub);
+			   e[i] = new Teacher(id_,nam,sal,adr,dep,sub);
 			
 			}
 		System.out.println("\n______EMPLOYEE DETAILS_____");
 		for( i=0; i<count; i++)
-	                      {
-			e[i].Display();
+	        {
+			   e[i].Display();
 		    }
 		
 		
