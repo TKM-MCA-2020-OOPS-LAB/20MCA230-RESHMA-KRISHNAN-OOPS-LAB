@@ -29,11 +29,10 @@ public class linked_list {
 	    list.add(b2);  
 	   
 	    System.out.println("Original List:\n");
-	    for(Book b:list){  
-	        System.out.println(b.id+"\t"+b.name+"\t\t"+b.author+"\t\t"+b.publisher+"\t\t"+b.quantity);  }
+	    for(Book b:list){
+	        System.out.println(b.id+"-->"+b.name+"-->"+b.author+"-->"+b.publisher+"-->"+b.quantity);  }
 	    list.clear();
-			   System.out.println("\nAfter removing all Books from the above List.. "+list);
-	        
+		System.out.println("\nAfter removing all Books from the above Lists.. "+list);
 	    
 		// TODO Auto-generated method stub
 
