@@ -19,7 +19,7 @@ public class server {
 			//Server is responding through its OutputStream
 			
 			PrintWriter pw = new PrintWriter(s.getOutputStream(), true);
-			pw.println("Hello Client!!");
+			pw.println("Hi Client!! I'm good.");
 			pw.close();
 		}
 		catch(Exception e) {
