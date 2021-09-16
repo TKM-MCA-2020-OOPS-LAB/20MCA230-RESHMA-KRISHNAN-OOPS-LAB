@@ -7,7 +7,7 @@ public class Client {
 		try {
 			Socket s = new Socket ("localhost", 2665);
 			PrintWriter pw = new PrintWriter(s.getOutputStream(), true);
-			pw.println("Hello Server!!");
+			pw.println("Hello Server!! How are you?");
 			
 			
 		//Client is reading from its InputStream	
